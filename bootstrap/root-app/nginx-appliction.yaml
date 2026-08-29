@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_USERNAME/ai-k8s-incident-platform.git
+    repoURL: https://github.com/sid19b/ai-k8s-incident-platform.git
     targetRevision: main
     path: gitops/apps/nginx/overlays/dev
 
