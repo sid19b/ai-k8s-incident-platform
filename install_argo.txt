@@ -7,3 +7,11 @@ helm repo update
 helm install argocd argo/argo-cd \
   --namespace argocd \
   --create-namespace
+
+.venv 
+
+python3 -m venv ai-service/.venv
+Activate it:
+source ai-service/.venv/bin/activate
+
+kind load docker-image ai-service:dev --name project-cluster
