@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - nginx-application.yaml
+  - ai-service-application.yaml
