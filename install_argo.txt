@@ -14,4 +14,8 @@ python3 -m venv ai-service/.venv
 Activate it:
 source ai-service/.venv/bin/activate
 
+docker build -t ai-service:dev  ./ai-service
+
 kind load docker-image ai-service:dev --name project-cluster
+
+kubectl port-forward svc/ai-service -n dev 8000:8000
